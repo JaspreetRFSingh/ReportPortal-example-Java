@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Logging Tests]" parallel="classes">
+  <listeners>
+    <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
+  </listeners>
+  <test thread-count="10" name="BasicTests(failed)" parallel="classes">
+    <classes>
+      <class name="com.epam.ReportPortalDemo.CalculatorTest">
+        <methods>
+          <include name="testAddition"/>
+        </methods>
+      </class> <!-- com.epam.ReportPortalDemo.CalculatorTest -->
+    </classes>
+  </test> <!-- BasicTests(failed) -->
+</suite> <!-- Failed suite [Logging Tests] -->

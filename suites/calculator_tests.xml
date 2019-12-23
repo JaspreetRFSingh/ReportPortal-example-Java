@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Calculator Tests" parallel="classes" thread-count="10">
+
+    <listeners>
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
+    </listeners>
+
+    <test verbose="1" name="BasicTests">
+        <classes>
+            <class name="com.epam.ReportPortalDemo.CalculatorTest"/>
+        </classes>
+    </test>
+</suite>
